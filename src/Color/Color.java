@@ -1,3 +1,5 @@
+package Color;
+
 public class Color implements Cloneable {
     int red;
     int green;

@@ -1,3 +1,7 @@
+package Engine;
+
+import Engine.*;
+
 public class EngineFactory {
     public enum EngineType {
         ENGINE2,
@@ -6,7 +10,7 @@ public class EngineFactory {
         ENGINE16
     }
 
-    public static Engine makeEngine(EngineType type) {
+    public static AbstractEngine makeEngine(EngineType type) {
         return switch (type) {
             case ENGINE2 -> new Engine2();
             case ENGINE4 -> new Engine4();
